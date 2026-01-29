@@ -29,6 +29,6 @@ jobs:
      - name: meta-data-actor
        run: echo ${{ github.triggering_actor }}
 
-     - name: meta-data-actor
+     - name: secrets-variable
        run: echo ${{ secrets.KEY_ID }}
        
