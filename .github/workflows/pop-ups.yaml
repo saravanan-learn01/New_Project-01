@@ -1,0 +1,25 @@
+name: env variable testing
+
+on:
+  workflow_dispatch:
+
+ inputs:
+    NUMBER 1:
+      description: "First Number"
+    number 2:
+      description: "Second Number"
+
+jobs:
+  pop-ups:
+    runs-on: ubuntu-latest
+    
+    steps:
+     - name: checkout
+       uses: actions/checkout@v4
+   
+
+     - name: secret-checking
+       run: echo ${{inputs.NUMBER 1}}
+       
+     - name: meta-data-repository
+       run: echo ${{inputs.NUMBER 1}} 
