@@ -19,4 +19,13 @@ jobs:
 
      - name: secret-checking
        run: echo ${{ vars.NEWBIE }}
-    
+       
+     - name: meta-data-repository
+       run: echo ${{ github.repository }}
+       
+     - name: meta-data-workflow
+       run: echo ${{ github.workflow }}
+       
+     - name: meta-data-actor
+       run: echo ${{ github.triggering_actor }}
+       
