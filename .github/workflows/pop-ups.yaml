@@ -20,5 +20,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: retrive
+        run: echo ${{ inputs.number1 }}
+        
+      - name: retrive
+        run: echo ${{ inputs.number2 }}
+        
    
 
