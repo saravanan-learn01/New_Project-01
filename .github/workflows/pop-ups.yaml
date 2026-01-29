@@ -24,7 +24,7 @@ jobs:
       - name: retrive
         run: echo ${{ inputs.number1 }}
         
-      - name: retrive
+      - name: retrive1
         run: echo ${{ inputs.number2 }}
         
    
