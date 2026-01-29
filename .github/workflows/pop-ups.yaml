@@ -4,9 +4,9 @@ on:
   workflow_dispatch:
 
  inputs:
-    NUMBER 1:
+    NUMBER1:
       description: "First Number"
-    number 2:
+    NUMBER2:
       description: "Second Number"
 
 jobs:
@@ -19,7 +19,7 @@ jobs:
    
 
      - name: secret-checking
-       run: echo ${{inputs.NUMBER 1}}
+       run: echo ${{inputs.NUMBER1}}
        
      - name: meta-data-repository
-       run: echo ${{inputs.NUMBER 1}} 
+       run: echo ${{inputs.NUMBER2}} 
